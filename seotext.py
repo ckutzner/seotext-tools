@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+""" call with text to be analyzed as argument"""
+import sys
 import analysis
 import results
 
@@ -11,4 +13,5 @@ titlekw = {} # keywords in title tag
 
 
 # count words
- 
+text = open(sys.argv[0]).read() 
+print("Total wordcount:", len(text.split()))
