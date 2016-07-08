@@ -14,4 +14,5 @@ titlekw = {} # keywords in title tag
 
 # count words
 text = open(sys.argv[0]).read() 
-print("Total wordcount:", len(text.split()))
+wordcount = len(text.split())
+print("Total wordcount:\t{}".format(wordcount))
