@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
-""" call with text to be analyzed as argument"""
+""" call with text to be analyzed and target wordcount as argument"""
 import sys
 import analysis
 import results
+
+# read variable targetcount from args
+infile = sys.argv[1]
+targetcount = int(sys.argv[2])
 
 # read in keywords, build dictionaries
 bodykw = {} # keywords in body text, pattern: Keyword, target count
@@ -11,8 +15,5 @@ h2kw = {} # keywords in h2
 metakw = {} # keywords in meta description
 titlekw = {} # keywords in title tag
 
-
-# count words
-text = open(sys.argv[0]).read() 
-wordcount = len(text.split())
-print("Total wordcount:\t{}".format(wordcount))
+# Call ALL THE functions :)
+analysis.wordcount(infile, targetcount)
