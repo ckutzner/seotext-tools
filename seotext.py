@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-""" call with text to be analyzed and target wordcount as argument"""
+""" call with text to be analyzed and target wordcount as argument for now; later, target word count shall be read from data file!"""
 import sys
 import analysis
 import results
 
-# read variable targetcount from args
+# read variable targetcount from args - for now; in finished software that should be read from data file!
 infile = sys.argv[1]
 targetcount = int(sys.argv[2])
 
@@ -15,5 +15,16 @@ h2kw = {} # keywords in h2
 metakw = {} # keywords in meta description
 titlekw = {} # keywords in title tag
 
-# Call ALL THE functions :)
+# create text object to be passed to functions; returns text as list!
+with open(infile, "r") as f:
+    text = f.read().split()
+
+# Call ALL THE functions :) and maybe classes!
 analysis.wordcount(infile, targetcount)
+#analysis.kwcount( )
+#results.pretty()
+
+# test 
+if __name__ == "__main__":
+    print(text[0:10])
+    print("This module is not functional yet!")
