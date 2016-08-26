@@ -27,7 +27,7 @@ def wordcount(infile, targetcount):
     else:
         message = "Target count achieved!"
 
-    print("Total wordcount:\t{}\n\t{}".format(wordcount, message)) # this printout will be moved to results.py to give a pretty-printed results table once I have figured out how to do that.
+#    print("Total wordcount:\t{}\n\t{}".format(wordcount, message)) # this printout will be moved to results.py to give a pretty-printed results table once I have figured out how to do that.
     return wordcount, message
 
 # test
