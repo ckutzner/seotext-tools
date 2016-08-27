@@ -20,11 +20,13 @@ with open(infile, "r") as f:
     text = f.read().split()
 
 # Call ALL THE functions :) and maybe classes!
-analysis.wordcount(infile, targetcount)
+wc = analysis.wordcount(text, targetcount)
 #analysis.kwcount( )
-#results.pretty()
+results.pretty(infile, wc)
 
 # test 
 if __name__ == "__main__":
-    print(text[0:10])
-    print("This module is not functional yet!")
+    print(len(text))
+    print(wc)
+#    results.pretty(infile, wc)
+#    print("This module is not functional yet!")
