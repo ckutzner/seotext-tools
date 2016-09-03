@@ -17,10 +17,11 @@ def kwcount(text, keyword, target):
 def wordcount(text, targetcount):
     """This function counts the words in the text and determines if target word count has been reached or exceeded by more than 35 words.""" #still to be added: function to exclude meta and title section from the word count
     wordcount = int(len(text))
+    tolerance = targetcount*0.05 # best guesstimate for a significant formula I can come up with now
     # different evaluation from keyword count is needed here because keyword count does not have tolerance, wordcount must have or else it's hard to achieve.
     if wordcount < targetcount:
         message = "Not there yet!"
-    elif wordcount > targetcount+35:
+    elif wordcount > targetcount+tolerance:
         message = "Over target count"
     else:
         message = "Target count achieved!"
