@@ -15,9 +15,11 @@ h2kw = {} # keywords in h2
 metakw = {} # keywords in meta description
 titlekw = {} # keywords in title tag
 
-# create text object to be passed to functions; returns text as list!
+# create text object to be passed to functions; returns text as list! - could possibly get moved to analysis.wordcount()
 with open(infile, "r") as f:
     text = f.read().split()
+
+# split text into headlines and body - probably requires regex & reading text via readlines (except for meta and title section - multiline mode!) - should probably be moved to analysis?
 
 # Call ALL THE functions :) and maybe classes!
 wc = analysis.wordcount(text, targetcount)
@@ -29,4 +31,4 @@ if __name__ == "__main__":
     print(len(text))
     print(wc)
 #    results.pretty(infile, wc)
-#    print("This module is not functional yet!")
+    print("This module is not functional yet!")
