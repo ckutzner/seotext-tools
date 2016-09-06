@@ -12,8 +12,8 @@ targetcount = int(sys.argv[2])
 bodykw = {} # keywords in body text, pattern: Keyword, target count
 h1kw = {} # keywords in h1
 h2kw = {} # keywords in h2
-metakw = {} # keywords in meta description
-titlekw = {} # keywords in title tag
+#metakw = {} # keywords in meta description
+#titlekw = {} # keywords in title tag
 
 # create text object to be passed to functions; returns text as list! 
 with open(infile, "r") as f:
