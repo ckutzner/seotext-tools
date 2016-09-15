@@ -7,7 +7,7 @@ h1: 1x wunderbare Heiterkeit
 h2: 1x Heiterkeit
 Meta: 1x Heiterkeit, 1x wunderbare Heiterkeit
 
-Wunderbare Heiterkeit
+Foo Bar Blub
 File: testdata/foobar.md
 Titel: 1x Foo Bar 
 300
