@@ -1,17 +1,6 @@
-Wunderbare Heiterkeit
-File: testdata/testtext.md
-Titel: 1x Wunderbare Heiterkeit
-500
-Body: 2x wunderbare Heiterkeit, 5x Heiterkeit, 3x das liebe Tal
-h1: 1x wunderbare Heiterkeit
-h2: 1x Heiterkeit
-Meta: 1x Heiterkeit, 1x wunderbare Heiterkeit
-
 Foo Bar Blub
 File: testdata/foobar.md
-Titel: 1x Foo Bar 
 300
 Body: 2x Bar, 1x Foo Bar, 7x blubb 
 h1: 1x Foo Bar 
 h2: 2x Foo Bar blubb
-Meta: 1x Foo Bar, 1x Foo
